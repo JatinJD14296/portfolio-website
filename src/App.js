@@ -1,23 +1,18 @@
-import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Navigation from './Navigation';
-import HomePage from './HomePage';
-import AboutPage from './AboutPage';
-import ResumePage from './ResumePage';
-import PortfolioPage from './PortfolioPage';
+import React from "react";
+import { Helmet } from "react-helmet";
+// Screens
+import Landing from "./screens/Landing.jsx";
 
-function App () {
+export default function App() {
   return (
-    <Router>
-      <div>
-        <Navigation />
-        <Route exact path="/" component={HomePage} />
-        <Route path="/about" component={AboutPage} />
-        <Route path="/resume" component={ResumePage} />
-        <Route path="/portfolio" component={PortfolioPage} />
-      </div>
-    </Router>
+    <div>
+      <Helmet>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Khula:wght@400;600;800&display=swap" rel="stylesheet" />
+      </Helmet>
+      <Landing />
+    </div>
   );
 }
 
-export default App;
