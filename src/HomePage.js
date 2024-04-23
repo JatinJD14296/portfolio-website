@@ -1,7 +1,7 @@
 import React from 'react';
 import './HomePage.css'; // Import CSS file for styling
 
-const HomePage = () => {
+function HomePage () {
   return (
     <div className="home-container">
       <div className="hero-section">

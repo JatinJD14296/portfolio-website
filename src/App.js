@@ -6,7 +6,7 @@ import AboutPage from './AboutPage';
 import ResumePage from './ResumePage';
 import PortfolioPage from './PortfolioPage';
 
-const App = () => {
+function App () {
   return (
     <Router>
       <div>
